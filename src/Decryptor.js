@@ -1,9 +1,9 @@
 const nacl = require('libsodium-wrappers')
 var ownKey = null
 
-beforeAll(async() => {
+async function init(){
     await nacl.ready
-})
+}
 
 // definieren functies door te exporteren vanuit src folder
 
